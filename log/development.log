@@ -1,0 +1,102 @@
+Started GET "/" for 127.0.0.1 at 2021-11-11 09:53:22 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.7.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.7.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.4ms | Allocations: 403)
+Completed 200 OK in 23ms (Views: 19.6ms | MongoDB: 0.0ms | Allocations: 2285)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-11-11 09:53:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for ::1 at 2021-11-11 10:10:36 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Larissa", "email"=>"biancahlary@gmail.com", "user"=>{"name"=>"Larissa", "email"=>"biancahlary@gmail.com"}}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:5 conn:1:1 sconn:3 | backend_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('618d164c8e16009ec5d15b10'), "name"=>"Larissa", "email"=>"biancahlary@gmail.com"}], "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9300 type=uuid data=0x64e6e2191b...
+MONGODB | localhost:27017 req:5 | backend_development.insert | SUCCEEDED | 0.019s
+Completed 201 Created in 56ms (Views: 0.8ms | MongoDB: 0.0ms | Allocations: 7520)
+
+
+Started GET "/users" for ::1 at 2021-11-11 10:10:36 -0300
+Processing by UsersController#index as HTML
+MONGODB | localhost:27017 req:7 conn:1:1 sconn:3 | backend_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9300 type=uuid data=0x64e6e2191b2a4098...>}}
+MONGODB | localhost:27017 req:7 | backend_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 7ms (Views: 6.3ms | MongoDB: 0.0ms | Allocations: 1023)
+
+
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started POST "/users" for ::1 at 2021-11-11 10:11:09 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Tekuan", "email"=>"tekuan@tk.com", "user"=>{"name"=>"Tekuan", "email"=>"tekuan@tk.com"}}
+MONGODB | localhost:27017 req:11 conn:1:1 sconn:3 | backend_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('618d166d8e16009ec5d15b11'), "name"=>"Tekuan", "email"=>"tekuan@tk.com"}], "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9300 type=uuid data=0x64e6e2191b2a4098......
+MONGODB | localhost:27017 req:11 | backend_development.insert | SUCCEEDED | 0.003s
+Completed 201 Created in 13ms (Views: 1.0ms | MongoDB: 0.0ms | Allocations: 852)
+
+
+Started GET "/users" for ::1 at 2021-11-11 10:11:09 -0300
+Processing by UsersController#index as HTML
+MONGODB | localhost:27017 req:12 conn:1:1 sconn:3 | backend_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9300 type=uuid data=0x64e6e2191b2a4098...>}}
+MONGODB | localhost:27017 req:12 | backend_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 16ms (Views: 15.3ms | MongoDB: 0.0ms | Allocations: 845)
+
+
+Started POST "/users" for ::1 at 2021-11-11 10:11:37 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Dapedu", "email"=>"dapedu@perfect.com", "user"=>{"name"=>"Dapedu", "email"=>"dapedu@perfect.com"}}
+MONGODB | localhost:27017 req:16 conn:1:1 sconn:3 | backend_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('618d16898e16009ec5d15b12'), "name"=>"Dapedu", "email"=>"dapedu@perfect.com"}], "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9300 type=uuid data=0x64e6e2191b2a40...
+MONGODB | localhost:27017 req:16 | backend_development.insert | SUCCEEDED | 0.001s
+Completed 201 Created in 9ms (Views: 2.1ms | MongoDB: 0.0ms | Allocations: 851)
+
+
+Started GET "/users" for ::1 at 2021-11-11 10:11:37 -0300
+Processing by UsersController#index as HTML
+MONGODB | localhost:27017 req:17 conn:1:1 sconn:3 | backend_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9300 type=uuid data=0x64e6e2191b2a4098...>}}
+MONGODB | localhost:27017 req:17 | backend_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 10ms (Views: 8.7ms | MongoDB: 0.0ms | Allocations: 932)
+
+
+Started POST "/users" for ::1 at 2021-11-11 10:11:55 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Dudinha", "email"=>"presida@cjr.com", "user"=>{"name"=>"Dudinha", "email"=>"presida@cjr.com"}}
+MONGODB | localhost:27017 req:19 conn:1:1 sconn:3 | backend_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('618d169b8e16009ec5d15b13'), "name"=>"Dudinha", "email"=>"presida@cjr.com"}], "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9300 type=uuid data=0x64e6e2191b2a4098...
+MONGODB | localhost:27017 req:19 | backend_development.insert | SUCCEEDED | 0.001s
+Completed 201 Created in 6ms (Views: 0.8ms | MongoDB: 0.0ms | Allocations: 863)
+
+
+Started GET "/users" for ::1 at 2021-11-11 10:11:55 -0300
+Processing by UsersController#index as HTML
+MONGODB | localhost:27017 req:20 conn:1:1 sconn:3 | backend_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9300 type=uuid data=0x64e6e2191b2a4098...>}}
+MONGODB | localhost:27017 req:20 | backend_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 15ms (Views: 11.7ms | MongoDB: 0.0ms | Allocations: 1020)
+
+
+Started POST "/users" for ::1 at 2021-11-11 17:18:16 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Joana", "email"=>"jo@ana.com", "user"=>{"name"=>"Joana", "email"=>"jo@ana.com"}}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:20 | backend_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('618d7a898e1600af3b01bcb7'), "name"=>"Joana", "email"=>"jo@ana.com"}], "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9280 type=uuid data=0xf584bef4b5ec44ca...>}}
+MONGODB | localhost:27017 req:6 | backend_development.insert | SUCCEEDED | 0.002s
+Completed 201 Created in 79ms (Views: 1.3ms | MongoDB: 0.0ms | Allocations: 6331)
+
+
+Started GET "/users" for ::1 at 2021-11-11 17:18:17 -0300
+Processing by UsersController#index as HTML
+MONGODB | localhost:27017 req:7 conn:1:1 sconn:20 | backend_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9280 type=uuid data=0xf584bef4b5ec44ca...>}}
+MONGODB | localhost:27017 req:7 | backend_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 6.3ms | MongoDB: 0.0ms | Allocations: 1215)
+
+
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
