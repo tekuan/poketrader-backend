@@ -100,3 +100,26 @@ Completed 200 OK in 7ms (Views: 6.3ms | MongoDB: 0.0ms | Allocations: 1215)
 
 MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
 MONGODB | There was a change in the members of the 'Single' topology.
+Started POST "/users" for ::1 at 2021-11-11 23:03:53 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"hi", "email"=>"hrllo", "user"=>{"name"=>"hi", "email"=>"hrllo"}}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:24 | backend_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('618dcb898e16001a7e80c9ea'), "name"=>"hi", "email"=>"hrllo"}], "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9280 type=uuid data=0x3afb56826b5143d5...>}}
+MONGODB | localhost:27017 req:6 | backend_development.insert | SUCCEEDED | 0.001s
+Completed 201 Created in 21ms (Views: 0.8ms | MongoDB: 0.0ms | Allocations: 6332)
+
+
+Started GET "/users" for ::1 at 2021-11-11 23:03:53 -0300
+Processing by UsersController#index as HTML
+MONGODB | localhost:27017 req:7 conn:1:1 sconn:24 | backend_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"backend_development", "lsid"=>{"id"=><BSON::Binary:0x9280 type=uuid data=0x3afb56826b5143d5...>}}
+MONGODB | localhost:27017 req:7 | backend_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 4ms (Views: 3.8ms | MongoDB: 0.0ms | Allocations: 1302)
+
+
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
