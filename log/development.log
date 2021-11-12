@@ -138,3 +138,14 @@ MONGODB | localhost:27017 req:78 | backend_development.find | SUCCEEDED | 0.001s
 Completed 200 OK in 5ms (Views: 4.4ms | MongoDB: 0.0ms | Allocations: 1281)
 
 
+Started GET "/" for ::1 at 2021-11-12 00:29:10 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/spezi/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/spezi/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.9ms | Allocations: 519)
+Completed 200 OK in 80ms (Views: 51.2ms | MongoDB: 0.0ms | Allocations: 3011)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-11-12 00:29:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
